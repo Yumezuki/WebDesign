@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moodsic</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css" />
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+</head>
+
+<body class="bg-gray-100 font-sans">
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 bg-[#E8DED3] flex justify-between items-center px-10 py-4">
+    <a href="index.html" class="text-2xl font-semibold">Moodsic</a>
+
+    <div class="space-x-10">
+      <a href="index.html">หน้าแรก</a>
+        <a href=" search.html">ค้นหา</a>
+      <a href="myfav.html">MyFav</a>
+    </div>
+
+    <a href="profile.html" class="bg-[#3D2C25] text-white px-3 py-2 rounded-full flex items-center text-sm">
+      <i class="fi fi-sr-user"></i>
+    </a>
+  </nav>
+
+  <!-- Hero Image -->
+  <div class="w-full flex justify-center">
+    <img
+      src="https://i.ytimg.com/vi/NcF5GvqTLxU/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCJPPl3ctQseBKtC9uMKBTXhRZUmg"
+      class="w-full h-[520px] object-cover " />
+
+    <!-- back -->
+    <button onclick="history.back()"
+      class="absolute left-12 top-24 md:top-28 md:text-xl text-white flex gap-2 items-center hover:scale-105 transition">
+      <span class="text-2xl">‹</span> กลับ
+    </button>
+
+    <!-- star -->
+    <div class="absolute top-24 right-10 md:top-28 md:text-3xl text-yellow-400 text-2xl hover:scale-110 transition cursor-pointer">
+      <i class="fi fi-rr-star"></i>
+    </div>
+  </div>
+
+  <!-- Event Content -->
+  <section class="max-w-7xl mx-auto px-6 py-8">
+    <h2 class="text-4xl font-bold text-gray-800 mb-6">
+      THE PEECH MAN SHOW ON TOUR
+    </h2>
+
+    <!-- Info Row -->
+    <div class="flex flex-wrap gap-4 mb-6">
+      <div class="bg-[#E6DDD2] px-6 py-3 rounded-xl text-gray-700">
+        วันที่ : 28 March 2026
+      </div>
+
+      <a href="https://maps.app.goo.gl/RuXqhL63ke5QQgQXA" target="_blank"
+        class="bg-[#E6DDD2] px-6 py-3 rounded-xl flex gap-2 items-center text-gray-700">
+        สถานที่ : Central Pattana 📍
+      </a>
+
+      <div class="bg-[#E6DDD2] px-6 py-3 rounded-xl">Paid</div>
+
+      <a href="https://www.eventpop.me/e/133683/thepeechmanshowontour" target="_blank"
+        class="bg-[#E6DDD2] px-6 py-3 rounded-xl"><i class="fi fi-rr-arrow-up-right-from-square"></i></a>
+    </div>
+
+    <!-- Detail Box -->
+    <div class="bg-[#E6DDD2] p-6 rounded-xl mb-6">
+      <h3 class="text-lg font-semibold mb-2">Detail</h3>
+
+      <p>
+        ไม่ปล่อยให้แฟน ๆ รอนาน ทั้ง 5 หนุ่มกลับมาพร้อมข่าวดี! หลังจากแอบสปอยไปว่ากำลังจะจัดคอนทัวร์ 3 ภาค
+        ล่าสุดต้นสังกัดได้ปล่อยโปสเตอร์อย่างเป็นทางการกับ “THE PEECH MAN SHOW ON TOUR”
+        ที่ครั้งนี้พวกเขาจะขนทัพความสนุกพร้อมบทเพลงที่คุณรักไปเสิร์ฟกันถึงที่ทั่วไทย เปิดฉากด้วย 3
+        จังหวัดหัวเมืองทั่วไทย ได้แก่ ขอนแก่น เชียงใหม่ และหาดใหญ่ โดยมีรายละเอียด ดังนี้<br>
+        <br>
+        ขอนแก่น : เซ็นทรัล ขอนแก่น วันที่ 28 มีนาคม 2569<br>
+        เชียงใหม่ : เซ็นทรัล เชียงใหม่ แอร์พอร์ต วันที่ 25 เมษายน 2569<br>
+        หาดใหญ่ : เซ็นทรัล หาดใหญ่ วันที่ 23 พฤษภาคม 2569<br>
+        <br>
+        มาร่วมออนทัวร์ไปบนเส้นทางแห่งเสียงเพลงที่จะคอยโอบกอดทุกคนไปพร้อมกัน
+      </p>
+    </div>
+
+    <!-- Artist -->
+    <a href="artist.html" class="inline-flex items-center gap-2 bg-[#E6DDD2] px-6 py-3 rounded-xl">
+      <span class="font-semibold"> ศิลปิน : </span>
+
+      PURPEECH →
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#3b2b24] text-white text-center py-4">
+    Made by Aunchista
+  </footer>
+</body>
+
+</html>

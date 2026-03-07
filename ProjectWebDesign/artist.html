@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moodsic</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css" />
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
+</head>
+
+<body class="bg-[#F3F3F3] text-[#3D2C25]">
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-50 bg-[#E8DED3] flex justify-between items-center px-10 py-4">
+    <a href="index.html" class="text-2xl font-semibold">Moodsic</a>
+
+    <div class="space-x-10">
+      <a href="index.html">หน้าแรก</a>
+      <a href=" search.html">ค้นหา</a>
+      <a href="myfav.html">MyFav</a>
+    </div>
+
+    <a href="profile.html" class="bg-[#3D2C25] text-white px-3 py-2 rounded-full flex items-center text-sm">
+      <i class="fi fi-sr-user"></i>
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="w-full flex justify-center">
+    <img src="https://media.atime.live/editor/content/f464b0dc-9ba0-41b3-901f-18646f12add2.jpeg"
+      class="w-full h-[520px] object-cover" />
+
+    <!-- back -->
+    <button onclick="history.back()"
+      class="absolute left-12 top-24 md:top-28 md:text-xl text-white flex gap-2 items-center hover:scale-105 transition">
+      <span class="text-2xl">‹</span> กลับ
+    </button>
+
+    <!-- star -->
+    <div class="absolute top-24 right-10 md:top-28 md:text-3xl text-yellow-400 text-2xl hover:scale-110 transition cursor-pointer">
+      <i class="fi fi-rr-star"></i>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="max-w-6xl mx-auto px-10 mt-10">
+    <!-- ARTIST NAME -->
+    <h1 class="text-4xl font-bold mb-4">PURPEECH</h1>
+
+    <!-- TAG -->
+    <div class="flex gap-4 mb-6">
+      <div class="bg-[#E6DDD2] px-5 py-2 rounded-full">#Chill</div>
+
+      <div class="bg-[#E6DDD2] px-5 py-2 rounded-full">#Indie</div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="bg-[#E6DDD2] p-6 rounded-xl text-gray-700">
+      <p class="font-semibold mb-2">About</p>
+
+      <p>
+        สมาชิกวง (5 คน) : เรฟ (Ref) – ร้องนำ, เซ้นต์ (Saint) – กีตาร์, ยีนส์
+        (Jeans) – คีย์บอร์ด, คอมพ์ (Comp) – เบส, เจมส์ (James) – กลอง
+        <br /><br />
+
+        เป็นวงอินดี้ป๊อปจากเชียงใหม่ ที่ค่อย ๆ เติบโตจากการทำเพลงและเล่นดนตรี
+        ก่อนมาอยู่ภายใต้การดูแลของ MILK!
+      </p>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="flex items-center gap-6 mt-6">
+      <div class="bg-[#E6DDD2] px-6 py-3 rounded-xl">ติดตามได้ที่ช่องทาง</div>
+      <a href="https://www.youtube.com/channel/UChv_NVuRwvrrMXpDVtUrPHQ" class="hover:scale-105" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" class="w-6" />
+      </a>
+      <a href="https://www.facebook.com/PURPEECH" class="hover:scale-105" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="w-6" />
+      </a>
+      <a href="https://www.instagram.com/purpeechpurpeech/" class="hover:scale-105" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="w-6" />
+      </a>
+    </div>
+
+    <!-- EVENT -->
+    <h2 class="text-2xl font-semibold mt-12 mb-4">Upcoming Event</h2>
+
+    <a href="event.html"
+      class="cursor-pointer mb-4 p-4 rounded-xl shadow h-36 w-52 justify-end text-white flex flex-col relative hover:scale-105 transition"
+      style="
+          background-image:
+            linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
+            url(&quot;https://i.pinimg.com/736x/a6/34/7a/a6347a255635dc4bd3240e2a7183aaad.jpg&quot;);
+          background-size: cover;
+          background-position: center;
+        ">
+      <h3 class="text-lg">THE PEECH MAN SHOW CONCERT</h3>
+
+      <div class="absolute z-1 top-3 left-3 text-center bg-sky-300 rounded-full px-4 py-2 text-black text-sm font-bold">
+        21
+        <div class="text-xs">Jun</div>
+      </div>
+    </a>
+
+    <!-- SONG LIST -->
+    <h2 class="text-2xl font-semibold mt-12 mb-6">เพลงของศิลปิน</h2>
+
+    <div id="songList" class="grid grid-cols-3 gap-6">
+      <!-- CARD -->
+
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="flex justify-center items-center gap-6 mt-10">
+      <button>‹</button>
+
+      <button class="bg-[#E6DDD2] px-3 py-1 rounded-full">1</button>
+
+      <button>2</button>
+
+      <button>›</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#3D2C25] text-white text-center py-4 mt-16">
+    Made by Aunchista
+  </footer>
+
+  <script>
+    const songList = document.getElementById("songList");
+
+    const songs = [
+      {
+        name: "หนึ่งคนตรงนี้",
+        artist: "PURPEECH",
+        image:
+          "https://i.ytimg.com/vi/HSUY57U2kJ4/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBkNf1b7F8MPgFUhD2ekntXZCzwUA",
+      },
+      {
+        name: "บังเอิญพบทานตะวัน",
+        artist: "PURPEECH",
+        image:
+          "https://i.ytimg.com/vi/FMuIkvsIjL0/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBy-E6TbEOwB5zfM2bLZRh0WlGKPQ",
+      },
+      {
+        name: "ปลายฝนต้นหนาว",
+        artist: "LANDOKMAI",
+        image:
+          "https://i.ytimg.com/vi/3EaB5urSaNk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDE3-25WUaXF4-yPPc1l_7CZtuhtg",
+      },
+      {
+        name: "ห้องเล็ก",
+        artist: "LANDOKMAI",
+        image:
+          "https://i.ytimg.com/vi/6urw5FzFt2Q/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCHmXHRY4Hwug16ivS8O-OX1UhMVA",
+      },
+      {
+        name: "กลัวความเสียใจ",
+        artist: "SARAN ft.Pearpilincys",
+        image:
+          "https://i.ytimg.com/vi/nOIKmWe-KEc/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBcXc9sg_aaJTsryWx06jrUC01gsg",
+      },
+      {
+        name: "คนโปรด",
+        artist: "Pearpilincys",
+        image:
+          "https://i.ytimg.com/vi/hO0R0YTqnow/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBC5WqKcTGPo_I4M_nwWvjkC0rWCA",
+      },
+    ];
+
+    function showSongs() {
+      songList.innerHTML = "";
+
+      songs.forEach((song, index) => {
+        songList.innerHTML += `
+      <div onclick="goSong(${index})"
+      class="cursor-pointer mb-4 p-4 rounded-xl shadow h-36 md:h-60 w-52 md:w-auto justify-end text-white flex flex-col hover:scale-105 transition" 
+      style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('${song.image}'); 
+      background-size: cover; 
+      background-position: center;">
+        <h3 class="text-lg font-semibold">${song.name}</h3>
+        <p class="text-sm text-gray-100">${song.artist}</p>
+      </div>
+    `;
+      });
+    }
+
+    showSongs();
+
+    function goSong(index) {
+      window.location.href = "song.html?id=" + index;
+    }
+  </script>
+</body>
+
+</html>
