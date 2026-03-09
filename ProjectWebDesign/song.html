@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="th">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,14 +12,14 @@
     href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css" />
 </head>
 
-  <body class="bg-[#F3F3F3] text-[#3D2C25]">
-    <!-- navbar -->
+<body class="bg-[#F3F3F3] text-[#3D2C25]">
+  <!-- navbar -->
   <nav class="sticky top-0 z-50 bg-[#E8DED3] flex justify-between items-center px-10 py-4">
     <a href="index.html" class="text-2xl font-semibold">Moodsic</a>
 
     <div class="space-x-10">
       <a href="index.html">หน้าแรก</a>
-        <a href=" search.html">ค้นหา</a>
+      <a href=" search.html">ค้นหา</a>
       <a href="myfav.html">MyFav</a>
     </div>
 
@@ -27,101 +28,89 @@
     </a>
   </nav>
 
-    <!-- HERO / BANNER -->
-    <div class="relative w-full">
-      <img
-        src="https://img.youtube.com/vi/FMuIkvsIjL0/maxresdefault.jpg"
-        class="w-full h-[520px] object-cover"
-      />
-      <div class="absolute inset-0 bg-black/30"></div>
+  <!-- HERO / BANNER -->
+  <div class="relative w-full">
+    <img src="https://img.youtube.com/vi/FMuIkvsIjL0/maxresdefault.jpg" class="w-full h-[520px] object-cover" />
+    <div class="absolute inset-0 bg-black/30"></div>
 
-      <!-- back -->
-      <button
-        onclick="history.back()"
-        class="absolute top-12 left-16 text-white md:text-xl flex items-center gap-2 hover:scale-110 transition"
-      >
-        ‹ กลับ
-      </button>
+    <!-- back -->
+    <button onclick="history.back()"
+      class="absolute top-12 left-16 text-white md:text-xl flex items-center gap-2 hover:scale-110 transition">
+      ‹ กลับ
+    </button>
 
-      <!-- star -->
+    <!-- star -->
+    <div
+      class="absolute top-6 right-10 md:top-10 md:text-3xl text-yellow-400 text-2xl hover:scale-110 transition cursor-pointer">
+      <i class="fi fi-rr-star"></i>
+    </div>
+
+    <!-- play button -->
+    <button onclick="window.open('https://youtu.be/FMuIkvsIjL0', '_blank')"
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
       <div
-        class="absolute top-6 right-10 md:top-10 md:text-3xl text-yellow-400 text-2xl hover:scale-110 transition cursor-pointer"
-      >
-        <i class="fi fi-rr-star"></i>
+        class="bg-white w-20 h-20 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition">
+        <div class="w-0 h-0 border-l-[18px] border-l-red-400 border-y-[12px] border-y-transparent ml-1"></div>
       </div>
+    </button>
+  </div>
 
-      <!-- play button -->
-      <button
-        onclick="window.open('https://youtu.be/FMuIkvsIjL0', '_blank')"
-        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-      >
-        <div
-          class="bg-white w-20 h-20 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition"
-        >
-          <div
-            class="w-0 h-0 border-l-[18px] border-l-red-400 border-y-[12px] border-y-transparent ml-1"
-          ></div>
-        </div>
-      </button>
+  <!-- detail -->
+  <div class="max-w-6xl mx-auto px-10 mt-10">
+    <h2 class="text-3xl font-bold">บังเอิญพบทานตะวัน</h2>
+
+    <!-- artist -->
+    <a href="artist.html" class="flex justify-between items-center mt-4">
+      <div class="bg-[#E6DDD2] px-6 py-2 rounded-xl flex items-center gap-3 cursor-pointer">
+        <p>ศิลปิน : PURPEECH</p>
+        <span>→</span>
+      </div>
+    </a>
+
+    <!-- about -->
+    <div class="bg-[#E6DDD2] p-6 rounded-xl mt-6 text-gray-700">
+      <p class="font-semibold mb-2">About</p>
+
+      <p>
+        PURPEECH - บังเอิญพบทานตะวัน [Official MV] <br />
+        คำส่งใจ : ทานตะวันที่น่ารักของพีพีทุกคน
+      </p>
     </div>
 
-    <!-- detail -->
-    <div class="max-w-6xl mx-auto px-10 mt-10">
-      <h2 class="text-3xl font-bold">บังเอิญพบทานตะวัน</h2>
+    <!-- tag -->
+    <div class="flex gap-4 mt-6">
+      <div class="bg-[#E6DDD2] px-5 py-2 rounded-full">#Chill</div>
 
-      <!-- artist -->
-      <a href="artist.html" class="flex justify-between items-center mt-4">
-        <div
-          class="bg-[#E6DDD2] px-6 py-2 rounded-xl flex items-center gap-3 cursor-pointer"
-        >
-          <p>ศิลปิน : PURPEECH</p>
-          <span>→</span>
-        </div>
-      </a>
-
-      <!-- about -->
-      <div class="bg-[#E6DDD2] p-6 rounded-xl mt-6 text-gray-700">
-        <p class="font-semibold mb-2">About</p>
-
-        <p>
-          PURPEECH - บังเอิญพบทานตะวัน [Official MV] <br />
-          คำส่งใจ : ทานตะวันที่น่ารักของพีพีทุกคน
-        </p>
-      </div>
-
-      <!-- tag -->
-      <div class="flex gap-4 mt-6">
-        <div class="bg-[#E6DDD2] px-5 py-2 rounded-full">#Chill</div>
-
-        <div class="bg-[#E6DDD2] px-5 py-2 rounded-full">#Indie</div>
-      </div>
-
-      <!-- other song -->
-      <h3 class="text-2xl font-semibold mt-12 mb-6">เพลงอื่นๆ ของศิลปิน</h3>
-
-      <div id="songList" class="grid grid-cols-3 gap-6 justify-items-center">
-        <!-- card -->
-
-      </div>
-
-      <div class="flex justify-center items-center gap-6 mt-10">
-        <button>‹</button>
-
-        <button class="bg-[#E6DDD2] px-3 py-1 rounded-full">1</button>
-
-        <button>2</button>
-
-        <button>›</button>
-      </div>
+      <div class="bg-[#E6DDD2] px-5 py-2 rounded-full">#Indie</div>
     </div>
 
-    <!-- footer -->
-    <footer class="bg-[#3D2C25] text-white text-center py-4 mt-16">
-      Made by Aunchista
-    </footer>
+    <!-- other song -->
+    <h3 class="text-2xl font-semibold mt-12 mb-6">เพลงอื่นๆ</h3>
 
-    <script>
+    <div id="songList" class="grid grid-cols-3 gap-6">
+      <!-- card -->
+
+    </div>
+
+    <div class="flex justify-center items-center gap-6 mt-10">
+      <button>‹</button>
+
+      <button class="bg-[#E6DDD2] px-3 py-1 rounded-full">1</button>
+
+      <button>2</button>
+
+      <button>›</button>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="bg-[#3D2C25] text-white text-center py-4 mt-16">
+    Made by Aunchista
+  </footer>
+
+  <script>
     const songList = document.getElementById("songList");
+
 
     const songs = [
       {
@@ -137,10 +126,28 @@
           "https://i.ytimg.com/vi/FMuIkvsIjL0/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBy-E6TbEOwB5zfM2bLZRh0WlGKPQ",
       },
       {
-        name: "กลัวว่าฉันจะไม่เสียใจ",
-        artist: "PURPEECH",
+        name: "ปลายฝนต้นหนาว",
+        artist: "LANDOKMAI",
         image:
-          "https://i.ytimg.com/vi/Hc4OrO4LRWw/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDdf6PQCAiXcQzgmxWNIgRqY-qq_w",
+          "https://i.ytimg.com/vi/3EaB5urSaNk/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDE3-25WUaXF4-yPPc1l_7CZtuhtg",
+      },
+      {
+        name: "ห้องเล็ก",
+        artist: "LANDOKMAI",
+        image:
+          "https://i.ytimg.com/vi/6urw5FzFt2Q/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCHmXHRY4Hwug16ivS8O-OX1UhMVA",
+      },
+      {
+        name: "กลัวความเสียใจ",
+        artist: "SARAN ft.Pearpilincys",
+        image:
+          "https://i.ytimg.com/vi/nOIKmWe-KEc/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBcXc9sg_aaJTsryWx06jrUC01gsg",
+      },
+      {
+        name: "คนโปรด",
+        artist: "Pearpilincys",
+        image:
+          "https://i.ytimg.com/vi/hO0R0YTqnow/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBC5WqKcTGPo_I4M_nwWvjkC0rWCA",
       },
     ];
 
@@ -150,7 +157,7 @@
       songs.forEach((song, index) => {
         songList.innerHTML += `
       <div onclick="goSong(${index})"
-      class="cursor-pointer mb-4 p-4 rounded-xl shadow h-36 md:h-60 w-52 md:w-80 justify-end text-white flex flex-col hover:scale-105 transition" 
+      class="cursor-pointer mb-4 p-4 rounded-xl shadow h-36 md:h-60 w-52 md:w-auto justify-end text-white flex flex-col hover:scale-105 transition" 
       style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('${song.image}'); 
       background-size: cover; 
       background-position: center;">
@@ -167,5 +174,6 @@
       window.location.href = "song.html?id=" + index;
     }
   </script>
-  </body>
+</body>
+
 </html>
